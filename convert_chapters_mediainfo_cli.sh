@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Script uses the MediaInfo CLI tool to scan a video file to identify Chapters and export that chapter information to an MKVToolnix compatible chapter file. Requires MediaInfo CLI to be installed on the computer.
+
 # Check if the correct number of arguments is provided
 if [ "$#" -ne 2 ]; then
     echo "Usage: $0 input_media_file output_chapters_file"
