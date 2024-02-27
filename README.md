@@ -122,3 +122,21 @@ Replace $input_file with your movie file and $output_file withe destination path
 ```
 ./convert_chapters.sh ~/Downloads/Movie.mkv ~/Downloads/Movie_Chapters.txt
 ```
+# Output Format
+These scripts will output a MKVToolNix compatible chapter text file in the following format:
+```
+CHAPTER1=00:00:00.000                             
+CHAPTER1NAME=Chapter 01
+CHAPTER2=00:07:19.939                             
+CHAPTER2NAME=Chapter 02
+CHAPTER3=00:15:51.534                             
+CHAPTER3NAME=Chapter 03
+CHAPTER4=00:18:49.421                             
+CHAPTER4NAME=Chapter 04
+CHAPTER5=00:24:38.978                             
+CHAPTER5NAME=Chapter 05
+CHAPTER6=00:32:00.837                             
+CHAPTER6NAME=Chapter 06
+CHAPTER7=00:36:53.129   
+```
+If the MediaInfo includes actual chapter names, they will be included. 
